@@ -18,6 +18,7 @@
       <a class="nav-logo" href="#">✦ Zilê</a>
       <ul class="nav-links">
         <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tiragem">Tirar as cartas</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#como">Como funciona</a></li>
         <li><a href="#contato">Agendar</a></li>
@@ -44,6 +45,18 @@
         Agendar atendimento
       </a>
     </section>
+
+    <div class="section-wrapper bg-mid tarot-wrapper">
+      <section class="section-inner tarot-section" id="tiragem">
+        <p class="section-label">✦ consulte os arcanos ✦</p><h2 class="section-title">Passado, Presente e Futuro</h2><div class="section-line"></div>
+        <p class="tarot-intro">Escreva sua pergunta. Depois, respire fundo, concentre-se nela e escolha três cartas.</p>
+        <div class="question-first"><label for="tarot-question">O que você deseja compreender?</label><textarea id="tarot-question" maxlength="300" rows="3" placeholder="Ex.: O que preciso compreender sobre meu momento profissional?" required></textarea><span id="question-count">0 / 300</span></div>
+        <div class="tarot-progress" aria-live="polite"><span id="selection-count">Nenhuma carta escolhida</span><span class="progress-dots"><i></i><i></i><i></i></span></div>
+        <div id="tarot-deck" class="tarot-deck" aria-label="Baralho com 22 cartas viradas para baixo"></div>
+        <div id="reading-panel" class="reading-panel" hidden><div id="selected-cards" class="selected-cards"></div><form id="tarot-form" class="tarot-form"><p class="question-help">As cartas estão prontas. Receba uma leitura interpretativa para reflexão e autoconhecimento.</p><button class="btn-tarot" type="submit">Receber minha leitura</button></form></div>
+        <div id="tarot-result" class="tarot-result" hidden aria-live="polite"></div>
+      </section>
+    </div>
 
     <!-- SOBRE -->
     <div class="section-wrapper bg-grad">
