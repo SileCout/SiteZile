@@ -48,8 +48,9 @@
 
     <div class="section-wrapper bg-mid tarot-wrapper">
       <section class="section-inner tarot-section" id="tiragem">
-        <p class="section-label">✦ consulte os arcanos ✦</p><h2 class="section-title">Passado, Presente e Futuro</h2><div class="section-line"></div>
-        <p class="tarot-intro">Escreva sua pergunta. Depois, respire fundo, concentre-se nela e escolha três cartas.</p>
+        <p class="section-label">✦ consulte os arcanos ✦</p><h2 class="section-title" id="spread-title">Passado, Presente e Futuro</h2><div class="section-line"></div>
+        <div class="spread-picker" aria-label="Escolha o tipo de tiragem"><button class="spread-option active" data-spread="timeline" type="button">3 cartas<span>Passado, Presente e Futuro</span></button><button class="spread-option" data-spread="afrodite" type="button">7 cartas<span>Templo de Afrodite</span></button><button class="spread-option" data-spread="caminho" type="button">5 cartas<span>Caminho do Consulente</span></button></div>
+        <p class="tarot-intro" id="spread-description">Escreva sua pergunta. Depois, respire fundo, concentre-se nela e escolha três cartas.</p>
         <div class="question-first"><label for="tarot-question">O que você deseja compreender?</label><textarea id="tarot-question" maxlength="300" rows="3" placeholder="Ex.: O que preciso compreender sobre meu momento profissional?" required></textarea><span id="question-count">0 / 300</span></div>
         <div class="tarot-progress" aria-live="polite"><span id="selection-count">Nenhuma carta escolhida</span><span class="progress-dots"><i></i><i></i><i></i></span></div>
         <div id="tarot-deck" class="tarot-deck" aria-label="Baralho com 22 cartas viradas para baixo"></div>
